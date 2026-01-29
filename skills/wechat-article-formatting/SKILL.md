@@ -21,7 +21,9 @@ metadata:
 
 | 主题 | 描述 | 参考 |
 |------|------|------|
-| 样式组件 | 引用框、分隔线、高亮块、卡片样式等常用组件 | [features-components](references/features-components.md) |
+| 样式组件 | 引用框、分隔线、高亮块、卡片、编号列表、互动引导等组件 | [features-components](references/features-components.md) |
+| 可视化元素 | 信息图、流程图、对比图、数据可视化等高级视觉设计 | [features-visual-elements](references/features-visual-elements.md) |
+| 章节设计 | 编号章节、标签标题、案例展示、进阶模块、总结设计 | [features-section-design](references/features-section-design.md) |
 | 代码展示 | 技术文章的代码块样式、语法高亮方案 | [features-code-blocks](references/features-code-blocks.md) |
 | 排版工具 | 常用公众号编辑器和排版工具推荐 | [features-tools](references/features-tools.md) |
 
