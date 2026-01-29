@@ -413,3 +413,300 @@ description: 微信公众号文章常用的引用框、分隔线、高亮块、�
   </div>
 </div>
 ```
+
+## 编号列表组件
+
+### 圆形编号列表
+
+```html
+<!-- 编号列表 -->
+<div style="margin: 1.5em 0;">
+  <!-- 项目 1 -->
+  <div style="display: flex; margin-bottom: 15px;">
+    <div style="
+      width: 28px;
+      height: 28px;
+      background: #07c160;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-size: 14px;
+      font-weight: bold;
+      flex-shrink: 0;
+    ">1</div>
+    <div style="margin-left: 12px; flex: 1;">
+      <p style="margin: 0 0 4px; font-size: 15px; font-weight: bold; color: #333;">安装方便</p>
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.6;">
+        IDE 里装个插件就完事了，不用单独下载软件。
+      </p>
+    </div>
+  </div>
+
+  <!-- 项目 2 -->
+  <div style="display: flex; margin-bottom: 15px;">
+    <div style="
+      width: 28px;
+      height: 28px;
+      background: #07c160;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-size: 14px;
+      font-weight: bold;
+      flex-shrink: 0;
+    ">2</div>
+    <div style="margin-left: 12px; flex: 1;">
+      <p style="margin: 0 0 4px; font-size: 15px; font-weight: bold; color: #333;">对设计师友好</p>
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.6;">
+        操作逻辑几乎和 Figma 一样，上手非常快。
+      </p>
+    </div>
+  </div>
+
+  <!-- 项目 3 -->
+  <div style="display: flex;">
+    <div style="
+      width: 28px;
+      height: 28px;
+      background: #07c160;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-size: 14px;
+      font-weight: bold;
+      flex-shrink: 0;
+    ">3</div>
+    <div style="margin-left: 12px; flex: 1;">
+      <p style="margin: 0 0 4px; font-size: 15px; font-weight: bold; color: #333;">自带组件库</p>
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.6;">
+        内置 shadcn、Halo 等组件库，一句话调用。
+      </p>
+    </div>
+  </div>
+</div>
+```
+
+### 简洁编号列表
+
+```html
+<!-- 简洁版编号 -->
+<div style="margin: 1.5em 0;">
+  <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+    <span style="
+      color: #07c160;
+      font-weight: bold;
+      margin-right: 10px;
+    ">①</span>
+    <span style="font-size: 15px; color: #333;">首先是<strong>安装方便</strong>，IDE 里装个插件就完事了</span>
+  </div>
+  <div style="display: flex; align-items: flex-start; margin-bottom: 12px;">
+    <span style="
+      color: #07c160;
+      font-weight: bold;
+      margin-right: 10px;
+    ">②</span>
+    <span style="font-size: 15px; color: #333;">然后是<strong>对设计师友好</strong>，操作逻辑和 Figma 几乎一样</span>
+  </div>
+  <div style="display: flex; align-items: flex-start;">
+    <span style="
+      color: #07c160;
+      font-weight: bold;
+      margin-right: 10px;
+    ">③</span>
+    <span style="font-size: 15px; color: #333;">还有一点很爽：<strong>自带组件库</strong></span>
+  </div>
+</div>
+```
+
+## 互动引导组件
+
+### 三按钮互动引导
+
+```html
+<!-- 点赞/在看/星标 引导 -->
+<div style="margin: 2.5em 0; text-align: center;">
+  <p style="margin: 0 0 15px; font-size: 14px; color: #666;">
+    觉得有用？点个「在看」支持一下
+  </p>
+
+  <div style="display: flex; justify-content: center; gap: 40px;">
+    <!-- 点赞 -->
+    <div style="text-align: center;">
+      <div style="
+        width: 50px;
+        height: 50px;
+        background: #fff5f5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin: 0 auto 8px;
+      ">👍</div>
+      <span style="font-size: 12px; color: #888;">点赞</span>
+    </div>
+
+    <!-- 在看 -->
+    <div style="text-align: center;">
+      <div style="
+        width: 50px;
+        height: 50px;
+        background: #f0fff4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin: 0 auto 8px;
+      ">👀</div>
+      <span style="font-size: 12px; color: #888;">在看</span>
+    </div>
+
+    <!-- 星标 -->
+    <div style="text-align: center;">
+      <div style="
+        width: 50px;
+        height: 50px;
+        background: #fffbeb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin: 0 auto 8px;
+      ">⭐</div>
+      <span style="font-size: 12px; color: #888;">星标</span>
+    </div>
+  </div>
+
+  <p style="margin: 15px 0 0; font-size: 12px; color: #bbb;">
+    THANKS FOR READING
+  </p>
+</div>
+```
+
+### 简约互动引导
+
+```html
+<!-- 简约版 -->
+<p style="
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  margin: 2em 0;
+">
+  👇 点击「在看」，让更多人看到
+</p>
+```
+
+### 横向互动条
+
+```html
+<!-- 横向互动条 -->
+<div style="
+  margin: 2em 0;
+  padding: 15px 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+">
+  <div style="text-align: center;">
+    <span style="font-size: 18px;">👍</span>
+    <span style="font-size: 13px; color: #666; margin-left: 5px;">点赞</span>
+  </div>
+  <div style="width: 1px; height: 20px; background: #ddd;"></div>
+  <div style="text-align: center;">
+    <span style="font-size: 18px;">💬</span>
+    <span style="font-size: 13px; color: #666; margin-left: 5px;">留言</span>
+  </div>
+  <div style="width: 1px; height: 20px; background: #ddd;"></div>
+  <div style="text-align: center;">
+    <span style="font-size: 18px;">🔄</span>
+    <span style="font-size: 13px; color: #666; margin-left: 5px;">转发</span>
+  </div>
+</div>
+```
+
+## 标签式标题组件
+
+### 基础标签标题
+
+```html
+<!-- 标签 + 标题 -->
+<div style="margin: 2.5em 0 1em;">
+  <span style="
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  ">Tool Review</span>
+  <h2 style="
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+  ">Stitch vs Pencil</h2>
+</div>
+```
+
+### 彩色标签标题
+
+```html
+<!-- 彩色标签 -->
+<div style="margin: 2.5em 0 1em;">
+  <span style="
+    display: inline-block;
+    background: #e6f7ff;
+    color: #1890ff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  ">新功能</span>
+  <h2 style="
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  ">一键导出 React 代码</h2>
+</div>
+```
+
+### 带副标题的标签
+
+```html
+<!-- 完整版：标签 + 主标题 + 副标题 -->
+<div style="margin: 2.5em 0 1em;">
+  <span style="
+    display: inline-block;
+    background: #f6ffed;
+    color: #52c41a;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  ">Workflow</span>
+  <h2 style="
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+  ">MCP + Skills 组合工作流</h2>
+  <p style="
+    margin: 0;
+    font-size: 13px;
+    color: #888;
+  ">全程在一个对话里完成，形成可复用的工作流</p>
+</div>
+```
