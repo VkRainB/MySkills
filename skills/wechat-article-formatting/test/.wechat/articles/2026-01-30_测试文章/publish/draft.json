@@ -1,0 +1,13 @@
+{
+  "workspace": "F:\\new_project_up\\Skills\\skills\\skills\\wechat-article-formatting\\test\\.wechat\\articles\\2026-01-30_测试文章",
+  "title": "测试文章",
+  "created_at": "2026-01-30T00:32:51.293232",
+  "response": {
+    "success": true,
+    "draft_id": "TEST_DRAFT_ID",
+    "received": {
+      "title": "测试文章",
+      "author": ""
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "./config.schema.json",
+  "version": "1.0",
+  "_note": "Copy this file to config.json and fill your settings",
+  "n8n": {
+    "base_url": "http://127.0.0.1:5679",
+    "webhooks": {
+      "upload_image": "/webhook/wechat-upload-image",
+      "create_draft": "/webhook/wechat-create-draft"
+    },
+    "auth": {
+      "_note": "type: none | basic | header",
+      "type": "none",
+      "basic": {
+        "username": "",
+        "password": ""
+      },
+      "header": {
+        "name": "X-N8N-API-KEY",
+        "value": ""
+      }
+    },
+    "timeout": 60
+  },
+  "wechat": {
+    "account_name": "",
+    "default_author": "",
+    "default_source_url": ""
+  },
+  "upload": {
+    "_note": "material_type: permanent | temporary",
+    "material_type": "permanent",
+    "max_concurrent": 3,
+    "retry_times": 3
+  }
+}

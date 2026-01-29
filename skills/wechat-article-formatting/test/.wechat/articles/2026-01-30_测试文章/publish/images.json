@@ -1,0 +1,21 @@
+{
+  "workspace": "F:\\new_project_up\\Skills\\skills\\skills\\wechat-article-formatting\\test\\.wechat\\articles\\2026-01-30_测试文章",
+  "count": 1,
+  "results": [
+    {
+      "file": "demo.png",
+      "path": "F:\\new_project_up\\Skills\\skills\\skills\\wechat-article-formatting\\test\\.wechat\\articles\\2026-01-30_测试文章\\source\\images\\demo.png",
+      "success": true,
+      "response": {
+        "success": true,
+        "media_id": "TEST_MEDIA_ID",
+        "url": "https://example.com/fake.png",
+        "received": {
+          "filename": "demo.png",
+          "type": "permanent"
+        }
+      },
+      "uploaded_at": "2026-01-30T00:32:45.420169"
+    }
+  ]
+}

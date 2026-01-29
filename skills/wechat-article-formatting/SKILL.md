@@ -3,7 +3,7 @@ name: wechat-article-formatting
 description: 微信公众号文章排版指南，涵盖字体样式、布局结构、图片处理、样式组件和移动端适配最佳实践
 metadata:
   author: AI Assistant
-  version: "2026.1.28"
+  version: "2026.1.29"
   source: 手写技能，基于微信公众号排版实践经验
 ---
 
@@ -26,6 +26,10 @@ metadata:
 | 章节设计 | 编号章节、标签标题、案例展示、进阶模块、总结设计 | [features-section-design](references/features-section-design.md) |
 | 代码展示 | 技术文章的代码块样式、语法高亮方案 | [features-code-blocks](references/features-code-blocks.md) |
 | 排版工具 | 常用公众号编辑器和排版工具推荐 | [features-tools](references/features-tools.md) |
+| 工作区管理 | .wechat 工作区结构、文章生命周期与元数据 | [features-workspace](references/features-workspace.md) |
+| n8n 集成 | n8n Webhook 配置、鉴权与连接方式 | [features-n8n-integration](references/features-n8n-integration.md) |
+| 自动发布流程 | 图片上传与草稿创建的自动化脚本流程 | [features-auto-publish](references/features-auto-publish.md) |
+| n8n 配置步骤 | n8n 工作流创建与鉴权配置的完整流程 | [features-n8n-setup](references/features-n8n-setup.md) |
 
 ## 最佳实践
 

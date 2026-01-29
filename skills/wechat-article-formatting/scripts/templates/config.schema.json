@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WeChat n8n Config",
+  "type": "object",
+  "required": ["version", "n8n"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Config version"
+    },
+    "n8n": {
+      "type": "object",
+      "required": ["base_url", "webhooks", "auth"],
+      "properties": {
+        "base_url": {
+          "type": "string",
+          "description": "n8n base URL"
+        },
+        "webhooks": {
+          "type": "object",
+          "required": ["upload_image", "create_draft"],
+          "properties": {
+            "upload_image": {"type": "string"},
+            "create_draft": {"type": "string"}
+          }
+        },
+        "auth": {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["none", "basic", "header"]
+            },
+            "basic": {
+              "type": "object",
+              "properties": {
+                "username": {"type": "string"},
+                "password": {"type": "string"}
+              }
+            },
+            "header": {
+              "type": "object",
+              "properties": {
+                "name": {"type": "string"},
+                "value": {"type": "string"}
+              }
+            }
+          }
+        },
+        "timeout": {
+          "type": "integer",
+          "default": 60
+        }
+      }
+    },
+    "wechat": {
+      "type": "object",
+      "properties": {
+        "account_name": {"type": "string"},
+        "default_author": {"type": "string"},
+        "default_source_url": {"type": "string"}
+      }
+    },
+    "upload": {
+      "type": "object",
+      "properties": {
+        "material_type": {
+          "type": "string",
+          "enum": ["permanent", "temporary"],
+          "default": "permanent"
+        },
+        "max_concurrent": {"type": "integer", "default": 3},
+        "retry_times": {"type": "integer", "default": 3}
+      }
+    }
+  }
+}
